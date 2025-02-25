@@ -42,12 +42,14 @@ function Navbar() {
 
                     <div className="flex items-center gap-4 py-4">
                         <Link
-                            to=""
+                            to="/categorias"
+                            className="hover:underline"
                         >
                             Categorias
                         </Link>
                         <Link
-                            to=""
+                            to="/cadastrarcategoria"
+                            className="hover:underline"
                         >
                             Cadastrar Categoria
                         </Link>
