@@ -15,20 +15,13 @@ function CardCategorias({ categoria }: CardCategoriasProps) {
             <p className='p-8 text-3xl bg-slate-200 h-full'>{categoria.nome}</p>
 
 
-            <div className="flex">
-                <Link to={`/editarcategoria/${categoria.id}`}
-                    className='w-full text-slate-100 bg-indigo-800 
-                        flex items-center justify-center py-2'>
-                    <button>
-                        <Pencil size={48} className="#ffffff " />
-                    </button>
+            <div className="flex items-center justify-center w-full text-slate-100 bg-indigo-800 py-1 gap-2">
+                <Link to={`/editarcategoria/${categoria.id}`}>
+                        <Pencil size={36} className="#ffffff " />
                 </Link>
 
-                <Link to={`/deletarcategoria/${categoria.id}`} className='w-full 
-                    flex items-center justify-center'>
-                    <button>
-                        <Trash size={48} className="#ffffff hover: border-red-500" />
-                    </button>
+                <Link to={`/deletarcategoria/${categoria.id}`} >
+                        <Trash size={36} color="#ffffff" />
                 </Link>
             </div>
 

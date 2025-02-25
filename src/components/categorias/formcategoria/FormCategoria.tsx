@@ -89,15 +89,15 @@ function FormCategoria() {
                     <input
                         type="text"
                         placeholder="Categoria"
-                        name="tipo"
-                        className="p-2 border-2 rounded border-slate-700 bg-white"
+                        name="nome"
+                        className="p-2 border-1 rounded border-slate-700 bg-white"
                         required
                         value={categoria.nome}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />
                 </div>
                 <button
-                    className="flex justify-center w-1/2 py-2 mx-auto rounded text-slate-100 bg-slate-400 hover:bg-slate-800"
+                    className="flex justify-center w-1/2 py-2 mx-auto rounded text-slate-100 bg-indigo-800 hover:bg-cyan-400"
                     type="submit"
                 >
                     {isLoading ?
