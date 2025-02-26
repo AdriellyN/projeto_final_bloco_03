@@ -4,6 +4,7 @@ import Home from './pages/home/Home'
 import ListarCategorias from './components/categorias/listacategorias/ListarCategorias'
 import FormCategoria from './components/categorias/formcategoria/FormCategoria'
 import DeletarCategoria from './components/categorias/deletarcategoria/DeletarCategoria'
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             </Routes>
           </div>
         </div>
+        <Footer/>
       </BrowserRouter>
     </>
   )
